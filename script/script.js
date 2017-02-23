@@ -75,7 +75,12 @@ $(document).ready(function () {
                 id: gameChoices[i],
                 value: gameChoices[i],
                 onclick: "rpsPlay(\"" + gameChoices[i] + "\")"
-            }).appendTo('#chooseMove').css('margin', '15px 15px 0 0');
+            }).appendTo('#chooseMove');
         }//End for   
-    });//End of #startGame     
+    });//End of #startGame 
+    $("#workExamples img", this).on('click',function() {
+       alert($(this).attr('title'));
+       //Open full size image when it is clicked on
+       
+    });
   })//End of (document).ready

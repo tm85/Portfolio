@@ -4,7 +4,7 @@ body {
 }
 header#topHeader {
         background-color:rgb(230,230,230);
-        padding: 40px 0;
+        padding: 25px 0;
         text-align:center;
         box-shadow: 0px 5px 30px #888888
 }
@@ -16,10 +16,13 @@ header#topHeader .myName {
     font-size:15px;
 
 }
-
+main {color:#9a9a9a}
+h1,h2,h3,h4,h5,h6 {color:#565656;}
 main section {
     padding:75px 125px;
     min-height:250px;
+    border-bottom: 1px solid lightgrey;
+    text-align:center;
 
 }
 
@@ -29,26 +32,50 @@ main section h1 {
     text-align:center;
 
 }
-#about img {
+#skillSet div.skills {
 
+    text-align:center;
+    width:800px;
+    margin:0 auto 50px auto;
+    display:flex;
 }
+#skillSet div.skills div {
+    margin: 0 15px;
+} 
+
+#skillSet div.tech p {
+    margin-bottom:5px;
+}
+
 #about p {
     padding-left: 35px;
 }
 
-#skillSet {
-    }
+#workExamples img {
+    padding:15px;
+    border:2px solid lightgrey;
+    margin: 0 15px 15px 0;
+}
 
+/*Rock Paper Scissors game*/
 #playGame {
     text-align:center;
     padding:15px;
 }
-#playGame #playArea {
+#playGame #playArea, #chooseMove {
     margin-top:10px;
 }
+
+#chooseMove input[type=button] {
+    width: 100px;
+    padding:10px 20px;
+    background-color:red;
+    color:white;
+    margin:0 10px;
+}
 footer {
-    padding-top:25px;
-    min-height:125px;
+    padding-top:15px;
+    min-height:75px;
     background-color:rgb(45,45,45);
     box-shadow: 0px -5px 15px #888888;
     text-align:center;
