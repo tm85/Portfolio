@@ -38,15 +38,7 @@ main section {
     text-align:center;
 
 }
-.linkDiv {
-    display:flex; 
-    align-items:center;    
-    justify-content: center;
-    margin-top:25px;
-}
-.linkDiv a {
-    margin:0 10px;
-}
+
 main section h1 {
     margin-bottom:50px;
     text-transform:uppercase;
@@ -55,11 +47,20 @@ main section h1 {
 }
 #about p {
     margin-top:25px;
+    text-align:left;
+    padding-left:275px;
 }
-#about p img {
-    margin-top:15px;
-    margin-right:15px;
+
+.linkDiv {
+    display:flex; 
+    align-items:center;
+    padding-left: 40px;
+    margin-top:40px   
 }
+.linkDiv a {
+    margin:0 25px;
+}
+
 #skillSet div.skills {
 
     text-align:center;
@@ -73,10 +74,6 @@ main section h1 {
 
 #skillSet div.tech p {
     margin-bottom:5px;
-}
-
-#about p {
-    padding-left: 35px;
 }
 
 #workExamples img {
@@ -93,7 +90,6 @@ main section h1 {
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
     
 }
 #popUpOverlay img {
@@ -109,11 +105,18 @@ main section h1 {
 #playGame #playArea, #chooseMove {
     margin-top:10px;
 }
+#playGame input {
+    margin-left:10px;
+}
 
+#playGame input[type=button] {
+    margin-top:15px;
+    padding:5px;
+}
 #chooseMove input[type=button] {
     width: 100px;
     padding:10px 20px;
-    background-color:red;
+    background-color:rgb(125,0,0);
     color:white;
     margin:0 10px;
 }

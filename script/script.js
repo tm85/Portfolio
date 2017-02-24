@@ -79,8 +79,6 @@ $(document).ready(function () {
         }//End for   
     });//End of #startGame 
     $("#workExamples img").on('click', this, function () {
-        console.log($(this).attr('title'));
-        console.log($(this).data("largeImg"));
         //Open full size image when it is clicked onclick
         //Get name of original image from data
         var popUpImg = "images/" + $(this).data("largeImg");
@@ -91,8 +89,8 @@ $(document).ready(function () {
             $("<img></img>").attr({
                 "src": popUpImg,
                 "alt": $(this).attr('title'),
-                "title": $(this).attr('title'),
-            }))
+                "title": $(this).attr('title')
+            }).css("height",window.innerHeight))
             .fadeIn(600));
     });//End of #workExamples img onclick
     $("#workExamples").on('click', "#popUpOverlay img, #popUpOverlay", function () {
