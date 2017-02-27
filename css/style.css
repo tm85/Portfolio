@@ -38,7 +38,9 @@ main section {
     text-align:center;
 
 }
-
+main section:nth-child(even) {
+    background-color:rgb(247,247,247);
+}
 main section h1 {
     margin-bottom:50px;
     text-transform:uppercase;
@@ -55,12 +57,14 @@ main section h1 {
     display:flex; 
     align-items:center;
     padding-left: 40px;
-    margin-top:40px   
+    margin-top:35px   
 }
 .linkDiv a {
     margin:0 25px;
 }
-
+footer .linkDiv {
+    justify-content: center;
+}
 #skillSet div.skills {
 
     text-align:center;
