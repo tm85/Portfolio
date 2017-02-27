@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    //Start the game
    $("#workExamples img").on('click', this, function () {
         //Open full size image when it is clicked onclick
         //Get name of original image from data
@@ -12,7 +11,7 @@ $(document).ready(function () {
                 "src": popUpImg,
                 "alt": $(this).attr('title'),
                 "title": $(this).attr('title')
-            }).css("height",window.innerHeight))
+            }).css({"max-height":"100%","max-width":"100%"}))
             .fadeIn(600));
     });//End of #workExamples img onclick
     $("#workExamples").on('click', "#popUpOverlay img, #popUpOverlay", function () {
