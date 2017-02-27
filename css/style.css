@@ -1,0 +1,134 @@
+* {padding:0; margin:0}
+body {
+     font-family: 'Source Sans Pro', sans-serif;
+
+}
+header#topHeader {
+        padding: 10px 0;
+        text-align:center;
+        box-shadow: 0px 5px 15px #888888;
+        position:fixed;
+        width:100%;
+        z-index:100;
+}
+
+header#topHeader .myName {
+    font-size:15px;
+
+}
+header#topHeader, footer {
+    background-color:rgb(125,125,125);
+    color:white;
+
+}
+header#topHeader h1 {
+    color:white;
+
+}
+main {
+    color:#9a9a9a;
+    padding-top:75px;
+    }
+h1,h2,h3,h4,h5,h6 {color:#565656;}
+
+main section {
+    padding:75px 125px;
+    min-height:250px;
+    border-bottom: 1px solid lightgrey;
+    text-align:center;
+
+}
+main section:nth-child(even) {
+    background-color:rgb(247,247,247);
+}
+main section h1 {
+    margin-bottom:50px;
+    text-transform:uppercase;
+    text-align:center;
+
+}
+#about p {
+    margin-top:25px;
+    text-align:left;
+    padding-left:275px;
+}
+
+.linkDiv {
+    display:flex; 
+    align-items:center;
+    padding-left: 40px;
+    margin-top:35px   
+}
+.linkDiv a {
+    margin:0 25px;
+}
+footer .linkDiv {
+    justify-content: center;
+}
+#skillSet div.skills {
+
+    text-align:center;
+    width:800px;
+    margin:0 auto 50px auto;
+    display:flex;
+}
+#skillSet div.skills div {
+    margin: 0 15px;
+} 
+
+#skillSet div.tech p {
+    margin-bottom:5px;
+}
+
+#workExamples img {
+    padding:15px;
+    border:2px solid lightgrey;
+    margin: 0 15px 15px 0;
+}
+
+#popUpOverlay {
+    background-color: rgba(0,0,0,.7);
+    position: fixed;
+    z-index:200;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    
+}
+#popUpOverlay img {
+    border:0px;
+    padding:0px;
+}
+
+/*Rock Paper Scissors game*/
+#playGame {
+    text-align:center;
+    padding:15px;
+}
+#playGame #playArea, #chooseMove {
+    margin-top:10px;
+}
+#playGame input {
+    margin-left:10px;
+}
+
+#playGame input[type=button] {
+    margin-top:15px;
+    padding:5px;
+}
+#chooseMove input[type=button] {
+    width: 100px;
+    padding:10px 20px;
+    background-color:rgb(125,0,0);
+    color:white;
+    margin:0 10px;
+}
+footer {
+    padding:10px 0 20px;
+    box-shadow: 0px -5px 10px #888888;
+    text-align:center;
+    color:white;
+
+}
+
