@@ -4,7 +4,7 @@ body {
 
 }
 header#topHeader {
-        padding: 10px 0;
+        padding: 10px;
         text-align:center;
         box-shadow: 0px 5px 15px #888888;
         position:fixed;
@@ -13,8 +13,7 @@ header#topHeader {
 }
 
 header#topHeader .myName {
-    font-size:15px;
-
+        font-size:15px;
 }
 header#topHeader, footer {
     background-color:rgb(125,125,125);
@@ -147,9 +146,23 @@ footer {
 
 /*Mobile and Tablet*/
 @media only screen and (max-width:767px) {
+    header#topHeader {
+        padding:10px;
+        text-align:left;
+    }
     
+   header#topHeader .myName {
+        font-size:12px;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+
+    }
+    .myName div {
+        margin-right:25px;
+    }
     main section {
-        padding:45px 25px;
+        padding:40px 25px;
     }
     #about img.tempClass {
         float:none;
@@ -165,7 +178,7 @@ footer {
     
     #skillSet div.skills {
         display:block;
-        }
+    }
     #skillSet div.skills div {
         margin: 0 auto 35px auto;
         max-width:none;
