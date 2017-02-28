@@ -63,13 +63,15 @@ main section h1 {
 .linkDiv {
     display:flex; 
     align-items:center;
-    margin-top:10px   
+    margin-top:25px;  
 }
 .linkDiv a {
     margin:0 25px;
 }
 footer .linkDiv {
     justify-content: center;
+    margin-top:10px;  
+
 }
 #skillSet div.skills {
     text-align:center;
@@ -143,8 +145,8 @@ footer {
 
 }
 
-/*Mobile*/
-@media only screen and (max-width:800px) {
+/*Mobile and Tablet*/
+@media only screen and (max-width:768px) {
     
     main section {
         padding:45px 25px;
