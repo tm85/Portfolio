@@ -32,7 +32,7 @@ main {
 h1,h2,h3,h4,h5,h6 {color:#565656;}
 
 main section {
-    padding:75px 125px;
+    padding:50px 125px;
     min-height:250px;
     border-bottom: 1px solid lightgrey;
     text-align:center;
@@ -47,16 +47,22 @@ main section h1 {
     text-align:center;
 
 }
-#about p {
-    margin-top:25px;
+#about img.tempClass {
+    height:175px;
+    width:250px; 
+    float:left;
+}
+#about .info {
     text-align:left;
     padding-left:275px;
 }
+.info p {
+    margin-top:25px;
 
+}
 .linkDiv {
     display:flex; 
     align-items:center;
-    padding-left: 40px;
     margin-top:35px   
 }
 .linkDiv a {
@@ -66,21 +72,24 @@ footer .linkDiv {
     justify-content: center;
 }
 #skillSet div.skills {
-
     text-align:center;
-    width:800px;
-    margin:0 auto 50px auto;
     display:flex;
+    justify-content: center;
 }
 div.skills p {
     text-align:left;
 }
 #skillSet div.skills div {
+    max-width:400px;
     margin: 0 15px;
+    
 } 
+#skillSet div.tech {
+    margin-top:25px;    
+}
 
 #skillSet div.tech p {
-    margin-bottom:5px;
+    margin-bottom:15px;
 }
 
 #workExamples img {
@@ -107,7 +116,6 @@ div.skills p {
 /*Rock Paper Scissors game*/
 #playGame {
     text-align:center;
-    padding:15px;
 }
 #playGame #playArea, #chooseMove {
     margin-top:10px;
@@ -135,3 +143,29 @@ footer {
 
 }
 
+/*Mobile*/
+@media only screen and (max-width:800px) {
+    
+    main section {
+        padding:45px 25px;
+    }
+    #about img.tempClass {
+        float:none;
+        height:175px;
+        width:250px; 
+    }
+    #about .info {
+        padding:0px;
+    }
+    .linkDiv { 
+        justify-content: center;
+    }
+    
+    #skillSet div.skills {
+        display:block;
+        }
+    #skillSet div.skills div {
+        margin: 0 auto 35px auto;
+        max-width:none;
+    }
+}
