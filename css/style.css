@@ -34,14 +34,13 @@ main section {
     padding:50px 125px;
     min-height:250px;
     border-bottom: 1px solid lightgrey;
-    text-align:center;
 
 }
 main section:nth-child(even) {
     background-color:rgb(247,247,247);
 }
 main section h1 {
-    margin-bottom:50px;
+    margin-bottom:25px;
     text-transform:uppercase;
     text-align:center;
 
@@ -52,7 +51,6 @@ main section h1 {
     float:left;
 }
 #about .info {
-    text-align:left;
     padding-left:275px;
 }
 .info p {
@@ -118,8 +116,8 @@ div.skills p {
 #playGame {
     text-align:center;
 }
-#playGame #playArea, #chooseMove {
-    margin-top:10px;
+#playGame div {
+    margin-bottom:15px;
 }
 #playGame input {
     margin-left:10px;
@@ -146,9 +144,9 @@ footer {
 
 /*Mobile and Tablet*/
 @media only screen and (max-width:767px) {
+    
     header#topHeader {
         padding:10px;
-        text-align:left;
     }
     
    header#topHeader .myName {
@@ -164,18 +162,25 @@ footer {
     main section {
         padding:40px 25px;
     }
+    #about {
+        text-align:center;
+    }
     #about img.tempClass {
         float:none;
         height:175px;
         width:250px; 
+        margin:0 auto;
     }
     #about .info {
         padding:0px;
+        text-align:justify;
     }
     .linkDiv { 
         justify-content: center;
     }
-    
+    #skillSet {
+        text-align:left;
+    }
     #skillSet div.skills {
         display:block;
     }
@@ -186,7 +191,6 @@ footer {
     #workExamples img {
         max-width:100%;
         margin: 10px 0;
-        padding:5px;
-
+        padding:0px;
     }
 }

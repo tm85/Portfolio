@@ -1,5 +1,5 @@
 $(document).ready(function () {
- $('#startGame').on('click', function () {
+    $('#startGame').on('click', function () {
         //$('#resetGame').show();
 
         //Resets playArea on new submission
@@ -7,7 +7,7 @@ $(document).ready(function () {
         userPlaying = initUser();
         $('<div>Hello ' + userPlaying.createFormalName() + '</div>').attr('id', 'greeting').appendTo('#playArea');
 
-        var greetingInstr = "Lets play a simple game of Rock, Paper, Scissors game!";
+        var greetingInstr = "Lets play a simple game of Rock, Paper, Scissors!";
         $('<div>' + greetingInstr + '</div>').attr('id', 'greetingInstr').appendTo('#playArea');
 
         //Create buttons for playing 
@@ -23,7 +23,7 @@ $(document).ready(function () {
             }).appendTo('#chooseMove');
         }//End for   
     });//End of #startGame
-}) 
+})
 
 //Create user
 var userPlaying;
@@ -188,7 +188,7 @@ function rpsPlay(played) {
             else
                 this.count.tieCnt++;
 
-        },       
+        },
         convertToObj: function (userPlayed) {
             //Find object in prototype from string that is selected from buttons
             var handObj = this.handPlayed;
