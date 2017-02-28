@@ -63,7 +63,7 @@ main section h1 {
 .linkDiv {
     display:flex; 
     align-items:center;
-    margin-top:35px   
+    margin-top:10px   
 }
 .linkDiv a {
     margin:0 25px;
