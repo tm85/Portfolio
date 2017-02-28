@@ -34,7 +34,6 @@ main section {
     padding:50px 125px;
     min-height:250px;
     border-bottom: 1px solid lightgrey;
-
 }
 main section:nth-child(even) {
     background-color:rgb(247,247,247);
@@ -84,11 +83,16 @@ div.skills p {
     
 } 
 #skillSet div.tech {
-    margin-top:25px;    
+    margin-top:25px;  
+    text-align:center;
+  
 }
 
 #skillSet div.tech p {
     margin-bottom:15px;
+}
+#workExamples {
+    text-align:center;
 }
 
 #workExamples img {
@@ -187,6 +191,9 @@ footer {
     #skillSet div.skills div {
         margin: 0 auto 35px auto;
         max-width:none;
+    }
+    #skillSet div.tech  {
+        text-align:left;
     }
     #workExamples img {
         max-width:100%;
