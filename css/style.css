@@ -170,4 +170,10 @@ footer {
         margin: 0 auto 35px auto;
         max-width:none;
     }
+    #workExamples img {
+        max-width:100%;
+        margin: 10px 0;
+        padding:5px;
+
+    }
 }
