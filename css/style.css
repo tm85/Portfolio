@@ -45,8 +45,6 @@ main section h1 {
 
 }
 #about img.tempClass {
-    height:175px;
-    width:250px; 
     float:left;
 }
 #about .info {
@@ -170,8 +168,6 @@ footer {
     }
     #about img.tempClass {
         float:none;
-        height:175px;
-        width:250px; 
         margin:0 auto;
     }
     #about .info {
