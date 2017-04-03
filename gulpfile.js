@@ -23,7 +23,7 @@ var IMAGES_PATH = 'public/images/**/*.{png,jpeg,jpg,svg,gif}';
 // Styles For SCSS
 gulp.task('styles', function () {
     console.log('starting styles task');
-    return gulp.src(SCSS_PATH)
+    return gulp.src('public/scss/styles.scss')
         .pipe(plumber(function (err) {
             console.log("Styles task error");
             console.log(err);
