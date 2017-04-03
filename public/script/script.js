@@ -1,8 +1,10 @@
+var IMAGES_DIR = './public/dist/images/';
+
 $(document).ready(function () {
    $("#workExamples img").on('click', this, function () {
         //Open full size image when it is clicked onclick
         //Get name of original image from data
-        var popUpImg = "images/" + $(this).data("largeImg");
+        var popUpImg = IMAGES_DIR + $(this).data("largeImg");
         $(this).after($("<div></div>")
             .attr("id", "popUpOverlay")
             .hide() //Hide created div to prevent it from appearing right away
