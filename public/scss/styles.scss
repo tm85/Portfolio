@@ -68,12 +68,6 @@ main {
     }
 }
 
-footer{    
-    .linkDiv {
-        justify-content: center;
-        margin-top:10px;  
-    }
-}
 #skillSet {    
     .skills {
         text-align:center;
@@ -145,6 +139,10 @@ footer {
     box-shadow: 0px -5px 10px #888888;
     text-align:center;
     color:white;
+    .linkDiv {
+        justify-content: center;
+        margin-top:10px;  
+    }
 }
 
 /*Mobile and Tablet*/
