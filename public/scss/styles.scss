@@ -1,0 +1,209 @@
+@import "reset";
+@import "variables";
+body {
+     font-family: 'Source Sans Pro', sans-serif;
+}
+
+header#topHeader {
+        padding: 10px;
+        text-align:center;
+        box-shadow: 0px 5px 15px #555;
+        position:fixed;
+        width:100%;
+        z-index:100;
+        .myName {
+            color:white;
+            font-weight:bold;
+            h1 {
+                font-size:30px;
+            }
+        }  
+}
+
+header#topHeader, footer {
+    background-color: #555;
+    color:white;
+}
+
+main {
+    color:$mainText;
+    padding-top:60px;
+    section {
+        padding:50px 125px;
+        min-height:250px;
+        border-bottom: 1px solid lightgrey;
+        &:nth-child(even) {
+            background-color:$alternatingBg;
+        }
+        h1 {
+            margin-bottom:25px;
+            text-transform:uppercase;
+            text-align:center;
+        }  
+        h1,h2,h3,h4,h5,h6 {
+            color:$mainheaders;
+        }
+    }
+}
+
+#about {
+    .tempClass {
+        float:left;
+        margin-top:25px;
+    }
+    .info {
+        padding-left:275px;
+        p {
+            margin-top:25px;
+        }
+    }
+}
+
+.linkDiv {
+    display:flex; 
+    align-items:center;
+    margin-top:25px; 
+    a {
+        margin:0 25px;
+    }
+}
+
+footer{    
+    .linkDiv {
+        justify-content: center;
+        margin-top:10px;  
+    }
+}
+#skillSet {    
+    .skills {
+        text-align:center;
+        display:flex;
+        justify-content: center;        
+        p {
+            text-align:left;
+        }
+        div {
+            max-width:400px;
+            margin: 0 15px;
+        }
+    }
+    .tech {
+        margin-top:25px;  
+        text-align:center;  
+    }
+    p {
+        margin-bottom:15px;
+    }
+}
+
+#workExamples {
+    text-align:center;
+    img {
+        padding:15px;
+        border:2px solid lightgrey;
+        margin: 0 15px 15px 0;
+    }
+}
+
+#popUpOverlay {
+    background-color: rgba(0,0,0,.7);
+    position: fixed;
+    z-index:200;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    img {
+        border:0px;
+        padding:0px;
+    }    
+}
+
+/*Rock Paper Scissors game*/
+#playGame {
+    text-align:center;
+    div {
+        margin-bottom:15px;
+    }
+    input {
+        margin-left:10px;
+    }
+    input[type=button] {
+        margin-top:15px;
+        padding:5px;
+    }
+    #chooseMove input[type=button] {
+        width: 100px;
+        padding:10px 20px;
+        background-color:rgb(125,0,0);
+        color:white;
+    }
+}
+
+footer {
+    padding:10px 0 20px;
+    box-shadow: 0px -5px 10px #888888;
+    text-align:center;
+    color:white;
+}
+
+/*Mobile and Tablet*/
+@media only screen and (max-width:767px) {    
+    header#topHeader {
+        padding:10px;        
+        .myName {
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            div {
+                margin-right:25px;
+            }
+            h1 {
+                font-size:20px;
+            }
+        }
+    }
+
+    main {
+        section {
+            padding:25px;
+        }  
+    }
+    #about {
+        text-align:center;
+        img.tempClass {
+            float:none;
+            margin:0 auto;
+        }
+        .info {
+            padding:0px;
+            text-align:justify;
+        }
+    }
+
+    .linkDiv { 
+        justify-content: center;
+    }
+    
+    #skillSet {
+        text-align:left;
+        .skills {
+            display:block;
+            div {
+                margin: 0 auto 35px auto;
+                max-width:none;
+            }
+        }
+        .tech {
+            text-align:left;
+        }
+    }
+
+    #workExamples {
+        img {
+            max-width:100%;
+            margin: 10px 0;
+            padding:0px;
+        }
+    }
+}
